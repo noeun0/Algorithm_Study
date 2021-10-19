@@ -1,12 +1,10 @@
 import sys
 sys.stdin = open("input.txt")
 
-
 def func(s,cnt):
     global result
     if list_h[s][1] > end or s == N:
         result.append(cnt)
-        #print(check)
         return
 
     for m in range(s,N):
