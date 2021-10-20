@@ -18,7 +18,8 @@ def func(s,cnt):
 N  = int(input())
 list_h = [[i for i in map(int,input().split())] for i in range(N)]
 list_h = sorted(list_h, key =lambda x : x[0])
-#print(list_h)
+list_h = sorted(list_h, key =lambda x : x[1])
+
 result = []
 check = [0]*N
 end = list_h[-1][0]
