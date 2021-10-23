@@ -7,7 +7,7 @@ def make_set(x):
 
 def find_set(x):
     if p[x]!=x:
-        p[x] = find_set(p[x])
+        find_set(p[x])
     return p[x]
 
 def union(x,y):
